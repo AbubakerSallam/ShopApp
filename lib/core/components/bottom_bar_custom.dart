@@ -3,8 +3,7 @@ import 'package:flutter/material.dart';
 
 class CustomNavigationBar extends StatefulWidget {
   const CustomNavigationBar(
-      {Key? key, required this.updatePage, required this.currentHomeScreen})
-      : super(key: key);
+      {super.key, required this.updatePage, required this.currentHomeScreen});
 
   final Function updatePage;
   final int currentHomeScreen;
@@ -57,8 +56,7 @@ class _CustomNavigationBarState extends State<CustomNavigationBar> {
 
 class BottomBarMiddleButton extends StatelessWidget {
   const BottomBarMiddleButton(this.currentHomeScreen, this.updatePage,
-      {Key? key})
-      : super(key: key);
+      {super.key});
   final int currentHomeScreen;
   final Function updatePage;
   @override
@@ -105,8 +103,7 @@ class BottomBarMiddleButton extends StatelessWidget {
 class BottomBarButton extends StatelessWidget {
   const BottomBarButton(
       this.currentPage, this.index, this.icon, this.updatePage,
-      {Key? key})
-      : super(key: key);
+      {super.key});
   final IconData icon;
   final int currentPage;
   final int index;

@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
-
+import 'package:flutter_localizations/flutter_localizations.dart';
 import 'core/routing/app_router.dart';
 import 'core/routing/routes.dart';
 
@@ -15,6 +15,16 @@ class ShopApp extends StatelessWidget {
       designSize: const Size(375, 812),
       minTextAdapt: true,
       child: MaterialApp(
+        locale: const Locale('ar'),
+        supportedLocales: const [
+          Locale('ar'),
+          Locale('en'),
+        ],
+        localizationsDelegates: const [
+          GlobalMaterialLocalizations.delegate,
+          GlobalWidgetsLocalizations.delegate,
+          GlobalCupertinoLocalizations.delegate,
+        ],
         title: 'متجر فخامة',
         debugShowCheckedModeBanner: false,
         initialRoute: Routes.splashScreen,

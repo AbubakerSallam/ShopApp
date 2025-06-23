@@ -3,8 +3,8 @@ import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 
 class SocialIconButtonsRow extends StatelessWidget {
   const SocialIconButtonsRow({
-    Key? key,
-  }) : super(key: key);
+    super.key,
+  });
 
   @override
   Widget build(BuildContext context) {
@@ -35,8 +35,7 @@ class SocialIconButtonsRow extends StatelessWidget {
 
 class SocialButtonWithShadow extends StatelessWidget {
   const SocialButtonWithShadow(
-      {Key? key, required this.icon, required this.color, this.onPressed})
-      : super(key: key);
+      {super.key, required this.icon, required this.color, this.onPressed});
 
   final Color color;
   final IconData icon;
