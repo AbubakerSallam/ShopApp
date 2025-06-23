@@ -3,7 +3,7 @@ import 'package:flutter/material.dart';
 import '../theming/colors.dart';
 
 class RatingWidget extends StatelessWidget {
-  const RatingWidget({Key? key, required this.rating}) : super(key: key);
+  const RatingWidget({super.key, required this.rating});
   final double rating;
 
   @override

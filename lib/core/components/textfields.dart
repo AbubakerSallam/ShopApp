@@ -1,12 +1,13 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
 
 class PrimaryTextField extends StatefulWidget {
   const PrimaryTextField({
     this.hintText = '',
     this.prefixIcon,
     this.isObscure = false,
-    Key? key,
-  }) : super(key: key);
+    super.key,
+  });
   final IconData? prefixIcon;
   final String hintText;
   final bool isObscure;
@@ -19,7 +20,7 @@ class _PrimaryTextFieldState extends State<PrimaryTextField> {
   @override
   Widget build(BuildContext context) {
     return Card(
-      shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(50)),
+      shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(50.r)),
       elevation: 16,
       shadowColor: Colors.black54,
       child: Padding(

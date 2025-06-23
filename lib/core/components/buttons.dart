@@ -6,8 +6,7 @@ import '../constants/images.dart';
 import '../theming/colors.dart';
 
 class AuthButton extends StatelessWidget {
-  const AuthButton({Key? key, required this.text, required this.onPressed})
-      : super(key: key);
+  const AuthButton({super.key, required this.text, required this.onPressed});
 
   final String text;
   final Function() onPressed;
@@ -44,12 +43,11 @@ class AuthButton extends StatelessWidget {
 
 class PrimaryShadowedButton extends StatelessWidget {
   const PrimaryShadowedButton(
-      {Key? key,
+      {super.key,
       required this.child,
       required this.onPressed,
       required this.borderRadius,
-      required this.color})
-      : super(key: key);
+      required this.color});
 
   final Widget child;
   final double borderRadius;
@@ -91,8 +89,7 @@ class PrimaryShadowedButton extends StatelessWidget {
 
 class FavouriteButton extends StatelessWidget {
   const FavouriteButton(
-      {Key? key, required this.iconSize, required this.onPressed})
-      : super(key: key);
+      {super.key, required this.iconSize, required this.onPressed});
 
   final double iconSize;
   final Function() onPressed;
@@ -107,6 +104,7 @@ class FavouriteButton extends StatelessWidget {
           backgroundColor: WidgetStateProperty.all(Colors.pink),
           elevation: WidgetStateProperty.all(4),
           shadowColor: WidgetStateProperty.all(Colors.pink)),
+      onPressed: onPressed,
       child: Center(
         child: Icon(
           Icons.favorite,
@@ -114,16 +112,15 @@ class FavouriteButton extends StatelessWidget {
           color: Colors.white,
         ),
       ),
-      onPressed: onPressed,
     );
   }
 }
 
 class RoundedAddButton extends StatelessWidget {
   const RoundedAddButton({
-    Key? key,
+    super.key,
     this.onPressed,
-  }) : super(key: key);
+  });
 
   final Function()? onPressed;
 
@@ -133,21 +130,20 @@ class RoundedAddButton extends StatelessWidget {
         elevation: 0,
         padding: const EdgeInsets.all(0),
         shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(100)),
+        onPressed: onPressed,
+        color: Colors.black,
         child: Center(
           child: Icon(
             FontAwesomeIcons.plus,
             size: 16,
             color: Theme.of(context).colorScheme.surface,
           ),
-        ),
-        onPressed: onPressed,
-        color: Colors.black);
+        ));
   }
 }
 
 class BagButton extends StatelessWidget {
-  const BagButton({Key? key, this.numberOfItemsPurchased = 0})
-      : super(key: key);
+  const BagButton({super.key, this.numberOfItemsPurchased = 0});
   final int? numberOfItemsPurchased;
   @override
   Widget build(BuildContext context) {

@@ -1,7 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:shop_app/core/routing/routes.dart';
 
-import '../../features/onboarding/ui/on_boarding_screen.dart';
+import '../../features/login/ui/login_screen.dart';
+import '../../features/signup/ui/signup_screen.dart';
 import '../../features/splash_screen.dart';
 
 class AppRouter {
@@ -13,9 +14,13 @@ class AppRouter {
         return MaterialPageRoute(
           builder: (_) => const SplashScreen(),
         );
-      case Routes.onBoardingScreen:
+      case Routes.loginScreen:
         return MaterialPageRoute(
-          builder: (_) => const OnboardingScreen(),
+          builder: (_) => const LoginScreen(),
+        );
+      case Routes.signUpScreen:
+        return MaterialPageRoute(
+          builder: (_) => const SignUpScreen(),
         );
       case Routes.defaultScreen:
       default:

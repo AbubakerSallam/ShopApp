@@ -19,6 +19,8 @@ dependencies:
   flutter_bloc: ^9.1.1
   flutter_secure_storage: ^9.2.4
   flutter_screenutil: ^5.9.3
+  flutter_localizations:
+    sdk: flutter
 
 dev_dependencies:
   flutter_test:
