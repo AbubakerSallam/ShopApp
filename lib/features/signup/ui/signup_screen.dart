@@ -4,7 +4,6 @@ import 'package:flutter/material.dart';
 
 import '../../../core/components/blur_container.dart';
 import '../../../core/components/buttons.dart';
-import '../../../core/components/social_icon_buttons_row.dart';
 import '../../../core/components/textfields.dart';
 import '../../../core/constants/images.dart';
 import '../../../core/routing/routes.dart';

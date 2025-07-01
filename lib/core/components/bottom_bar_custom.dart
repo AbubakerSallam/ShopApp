@@ -9,10 +9,10 @@ class CustomNavigationBar extends StatefulWidget {
   final int currentHomeScreen;
 
   @override
-  _CustomNavigationBarState createState() => _CustomNavigationBarState();
+  CustomNavigationBarState createState() => CustomNavigationBarState();
 }
 
-class _CustomNavigationBarState extends State<CustomNavigationBar> {
+class CustomNavigationBarState extends State<CustomNavigationBar> {
   @override
   Widget build(BuildContext context) {
     return SizedBox(

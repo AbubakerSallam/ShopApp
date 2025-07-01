@@ -102,7 +102,7 @@ class _LoginScreenState extends State<LoginScreen>
                 AuthButton(
                     text: 'دخول',
                     onPressed: () {
-                      //   Navigator.of(context).pushNamed(UserDashboard.id);
+                      Navigator.of(context).pushNamed(Routes.dashboard);
                     }),
                 const Spacer(),
                 RichText(
